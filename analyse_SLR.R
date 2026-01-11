@@ -103,3 +103,42 @@ print(bar_chart_rq2)
 
 ggsave("bar_chart_venues_rq2.pdf", plot = bar_chart_rq2, width = 8, height = 6)
 print("RQ2 venue distribution bar chart saved as 'bar_chart_venues_rq2.pdf'")
+
+
+slr_raw <- read_csv("SLR_Towards_a_Unified_Framework_for_Programming_Paradigms.csv")
+
+slr_granular <- slr_clean %>%
+  filter(Year >= 2000) %>% 
+  mutate(Period = case_when(
+    Year <= 2009 ~ "1. Foundational Era (2000-2009)",
+    Year >= 2010 & Year <= 2019 ~ "2. Classification Surge (2010-2019)",
+    Year >= 2020 ~ "3. Reconstructive Turn (2020-2025)",
+    TRUE ~ "Other"
+  )) %>%
+  filter(Period != "Other")
+
+granular_stats <- slr_granular %>%
+  group_by(Period, primary_rq) %>%
+  summarise(Count = n(), .groups = "drop") %>%
+  complete(Period, primary_rq, fill = list(Count = 0)) %>%
+  group_by(Period) %>%
+  mutate(Total = sum(Count)) %>%
+  mutate(Percentage = round(Count / Total * 100, 1))
+
+print("--- CONVERGENCE ANALYSIS ---")
+print(granular_stats)
+
+plot_granular <- ggplot(granular_stats, aes(x = Period, y = Percentage, fill = primary_rq)) +
+  geom_col(position = "dodge", width = 0.7) +
+  geom_text(aes(label = paste0(Percentage, "%")), 
+            position = position_dodge(width = 0.7), vjust = -0.5, size = 4) +
+  scale_fill_brewer(palette = "Set2") +
+  labs(title = "Evidence of the 'Reconstructive Turn' (2020s)",
+       subtitle = "Percentage of studies per Research Question over time",
+       y = "Share of Publications (%)",
+       fill = "Research Focus") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 15, hjust = 1))
+
+print(plot_granular)
+ggsave("figure_granular_trend.pdf", plot = plot_granular, width = 8, height = 5)
