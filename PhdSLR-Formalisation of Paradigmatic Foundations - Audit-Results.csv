@@ -1,0 +1,19 @@
+Title,Authors,DOI,DOI link,Venue,RQ,Screening score first auditor,Screening score second auditor,Screening judgement first auditor,Screening judgement second auditor
+"On Functional Programming , Language Design , andPersistence",Claus Reinke,-,-,-,1,"4,6","4,6",Include,Include
+A Semantics of Multiple Inheritance,L. Cardelli,10.1007/3-540-13346-1_2,https://doi.org/10.1007/3-540-13346-1_2,Information and Computation,1,"4,6","4,9",Include,Include
+"An algebraic model of class, message passing and inheritance",R. J. McKenzie,-,-,-,1,"4,6","4,5",Include,Include
+Programming Paradigms and Beyond,"S. Krishnamurthi, Kathi Fisler",10.1017/9781108654555.014,https://doi.org/10.1017/9781108654555.014,The Cambridge Handbook of Computing Education Research,1,"4,6","4,9",Include,Include
+PROGRAMMING PARADIGMS IN HIGHER EDUCATION,"L. Gorodnyaya, T. Andreyeva",10.31144/BNCC.CS.2542-1972.2015.N38.P67-90,https://doi.org/10.31144/BNCC.CS.2542-1972.2015.N38.P67-90,-,1,"4,3","3,8",Include,Exclude
+On Systematization of Programming Paradigms by Decision-Making Priorities,L. Gorodnyaya,10.26907/1562-5419-2020-23-4-666-696,https://doi.org/10.26907/1562-5419-2020-23-4-666-696,Russian Digital Libraries Journal,1,"4,0","4,2",Include,Include
+Programming Paradigms and Computational Thinking,G. Michaelson,-,-,-,1,"4,6","4,5",Include,Include
+"A survey of languages integrating functional, object-oriented and logic programming","K. Ng, C. Luk",10.1016/0165-6074(94)00017-5,https://doi.org/10.1016/0165-6074(94)00017-5,Microprocessing and Microprogramming,1,"4,3","4,2",Include,Include
+The epistemology of programming language paradigms,"F. Gobbo, M. Benini",-,-,-,1,"4,6","4,7",Include,Include
+Towards Language Interfaces for DSLs Integration,Thomas Degueule,-,-,-,2,"4,6","4,5",Include,Include
+Imperative Compositional Programming: Type Sound Distributive Intersection Subtyping with References via Bidirectional Typing,"Wenjia Ye, Yaozhu Sun, Bruno C. d. S. Oliveira",10.1145/3689782,https://doi.org/10.1145/3689782,Proc. ACM Program. Lang.,2,"4,9","4,9",Include,Include
+Unifying theories of healthiness condition,"J. He, C. Hoare",10.1109/APSEC.2000.896685,https://doi.org/10.1109/APSEC.2000.896685,Proceedings Seventh Asia-Pacific Software Engeering Conference. APSEC 2000,2,"4,9","4,9",Include,Include
+Certifying Choreography Compilation,"L. Cruz-Filipe, F. Montesi, Marco Peressotti",10.1007/978-3-030-85315-0_8,https://doi.org/10.1007/978-3-030-85315-0_8,International Colloquium on Theoretical Aspects of Computing,2,"4,9","4,7",Include,Include
+The precise control of inheritance and the inheritance of theory in the ADABTPL language,"T. Sheard, D. Stemple",10.1109/ICCL.1988.13064,https://doi.org/10.1109/ICCL.1988.13064,Proceedings. 1988 International Conference on Computer Languages,2,"4,9","4,8",Include,Include
+"A framework for the development of simulation systems (computation theory, compiling expert)",D. E. Stevenson,-,-,-,2,"4,9","4,3",Include,Exclude
+A verified integration of parallel programming paradigms in C++,P. Sivilotti,10.1109/IPPS.1994.288320,https://doi.org/10.1109/IPPS.1994.288320,Proceedings of 8th International Parallel Processing Symposium,2,"4,6","4,6",Include,Include
+Functional Programming Languages with Logical Variables: A Linear Logic View,"J. Darlington, Yike Guo, Martin Köhler",10.1007/3-540-57186-8_80,https://doi.org/10.1007/3-540-57186-8_80,Symposium on Programming Language Implementation and Logic Programming,2,"4,9","4,8",Include,Include
+A framework for studying the semantics of object-oriented programs,"Zhuangjian Wei, Arthur T. Poe",-,-,-,2,"4,5","4,5",Include,Include
